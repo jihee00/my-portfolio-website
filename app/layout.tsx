@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto, Roboto_Mono, Roboto_Serif } from "next/font/google";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const MainFont = Inter({ subsets: ["latin"] });
+const RobotoFont = Roboto({
+  subsets: ["latin"], variable: "--font-roboto",
+  weight: "100"
+});
 
 export const metadata: Metadata = {
   title: "Jihee Kim",
@@ -16,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(MainFont.className, RobotoFont.variable )}>
+        {children}
+      </body>
     </html>
   );
 }
