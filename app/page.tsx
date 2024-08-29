@@ -4,9 +4,8 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-4xl font-roboto">Hello Jihee Kim</h1>
-      <h1 className="text-4xl">Hello Jihee Kim</h1>
+    <div className="p-32">
+      <div className="link text-white text-2xl bg-red-500">Hover here</div>
     </div>
   );
 }
