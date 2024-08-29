@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Roboto_Mono, Roboto_Serif } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import GrainEffect from "@/components/visualEffects/grain-effect";
 
 const MainFont = Inter({ subsets: ["latin"] });
 const RobotoFont = Roboto({
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(MainFont.className, RobotoFont.variable )}>
+        <GrainEffect />
         {children}
       </body>
     </html>
