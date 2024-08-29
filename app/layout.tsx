@@ -1,9 +1,10 @@
+
 import type { Metadata } from "next";
 import { Inter, Roboto, Roboto_Mono, Roboto_Serif } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import GrainEffect from "@/components/visualEffects/grain-effect";
-import { Cursor } from "@/components/cursor/cursor";
+import Cursor from "@/components/cursor/cursor";
 
 const MainFont = Inter({ subsets: ["latin"] });
 const RobotoFont = Roboto({
