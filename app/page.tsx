@@ -7,6 +7,8 @@ import { FaUser } from "react-icons/fa";
 import Input from "@/components/ui/input";
 import TextArea from "@/components/ui/text-area";
 import Profile from "@/components/ui/profile";
+import FancyButton from "@/components/ui/fancy-button";
+import { FaArrowRight } from "react-icons/fa";
 export default function Home() {
   return <WaterWaveWrapper
     imageUrl=""
@@ -29,6 +31,9 @@ export default function Home() {
                 <TextArea placeholder="Full name"/>
                 <TextArea placeholder="Full name" icon={<FaUser />}/>
                 <Profile />
+                <div className="w-[350px]">
+                  <FancyButton text="Contact Me" icon={<FaArrowRight />}/>
+                </div>
               </Card>
           </div>
       </div>
