@@ -9,6 +9,7 @@ import TextArea from "@/components/ui/text-area";
 import Profile from "@/components/ui/profile";
 import FancyButton from "@/components/ui/fancy-button";
 import { FaArrowRight } from "react-icons/fa";
+import LiveClock from "@/components/ui/live-clock";
 export default function Home() {
   return <WaterWaveWrapper
     imageUrl=""
@@ -34,6 +35,7 @@ export default function Home() {
                 <div className="w-[350px]">
                   <FancyButton text="Contact Me" icon={<FaArrowRight />}/>
                 </div>
+                <LiveClock timeZone="America/Toronto"/>
               </Card>
           </div>
       </div>
