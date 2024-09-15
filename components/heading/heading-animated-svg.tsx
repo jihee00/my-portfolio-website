@@ -24,7 +24,9 @@ const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
         viewBox="0 0 384 384" // Adjust this viewBox based on your SVG content
         width={active ? 30 : 50}
         height={active ? 30 : 50}
-        className={cn(" origin-center transition-all duration-700 ease-in")}
+        className={cn("origin-center transition-all duration-700 ease-in", 
+          active && "animate-spin"
+        )}
       >
         <path
           id="dp_path001"
@@ -38,7 +40,7 @@ const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
       <div
         className={cn(
           "absolute origin-center transition-opacity duration-300",
-          active ? "opacity-animate-spin" : "opacity-0"
+          active ? "opacity-1" : "opacity-0"
         )}
       >
         <svg
