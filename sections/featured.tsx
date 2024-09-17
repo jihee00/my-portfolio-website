@@ -1,6 +1,7 @@
 import Heading from "@/components/heading/heading";
 import FeaturedCard from "@/components/cards/featured/featured-card";
 import { featuredData } from "@/data";
+import ExpandableFeatured from "@/components/expandables/expandable-featured";
 
 const MainFeatured = featuredData[0];
 
@@ -16,6 +17,9 @@ export default function FeaturedSection() {
       tag={MainFeatured.tag}
       video={MainFeatured.video}
       />
+      <div className="mt-24">
+        <ExpandableFeatured />
+      </div>
     </div>
   );
 }
