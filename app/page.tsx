@@ -14,8 +14,8 @@ export default function Home() {
     >
       {() => (
         <div className="pb-8">
-          {/*<LandingSection />
-          <FeaturedSection />*/}
+          <LandingSection />
+          <FeaturedSection />
           <AboutSection />
         </div>
       )}
