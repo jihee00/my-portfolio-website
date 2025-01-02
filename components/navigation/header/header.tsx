@@ -6,6 +6,7 @@ import { FaArrowRight } from 'react-icons/fa'
 import FullScreenMenu from '../full-screen-menu/full-screen-menu'
 import { useState } from 'react'
 import ToggleButton from '../full-screen-menu/toggle-button'
+import { AnimatePresence } from 'framer-motion'
 
 export default function Header() {
   const [open, setOpen] = useState<boolean>(false);
@@ -23,7 +24,9 @@ export default function Header() {
       {/*Toggle button*/}
       <ToggleButton open={open} setOpen={setOpen}/>
       {/*Full screen menu*/}
-      {open && <FullScreenMenu />}
+      <AnimatePresence mode="wait">
+        {open && <FullScreenMenu />}
+      </AnimatePresence>
     </div>
   );
 }
