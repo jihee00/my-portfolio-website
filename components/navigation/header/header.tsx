@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Profile from '@/components/ui/profile'
 import MagneticWrapper from '@/components/visualEffects/magnetic-wrapper'
 import FancyButton from '@/components/ui/fancy-button'
@@ -10,6 +10,21 @@ import { AnimatePresence } from 'framer-motion'
 
 export default function Header() {
   const [open, setOpen] = useState<boolean>(false);
+  const [showToggle, setShowToggle] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll=()=>{
+      if(window.scrollY > 300) {
+        setShowToggle(true);
+      }else{
+        setShowToggle(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
   return (
     <div className="w-full flex items-center justify-center md:justify-between">
       <Profile />
@@ -22,7 +37,7 @@ export default function Header() {
         </MagneticWrapper>
       </div>
       {/*Toggle button*/}
-      <ToggleButton open={open} setOpen={setOpen}/>
+      {showToggle && <ToggleButton open={open} setOpen={setOpen}/>}
       {/*Full screen menu*/}
       <AnimatePresence mode="wait">
         {open && <FullScreenMenu />}
