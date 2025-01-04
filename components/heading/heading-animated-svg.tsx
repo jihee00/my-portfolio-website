@@ -13,7 +13,7 @@ const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
   const [active, setActive] = useState<boolean>(animated || false);
   return (
     <div
-      className="link relative flex items-center justify-center w-[50px]"
+      className="link relative flex items-center justify-center w-[15px]"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
     >
@@ -22,8 +22,8 @@ const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 384 384" // Adjust this viewBox based on your SVG content
-        width={active ? 30 : 50}
-        height={active ? 30 : 50}
+        width={active ? 20 : 40}
+        height={active ? 20 : 40}
         className={cn("origin-center transition-all duration-700 ease-in", 
           active && "animate-spin"
         )}
@@ -60,7 +60,7 @@ const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
               startOffset={0}
               dominantBaseline="Central"
               style={{
-                fontSize: "14.5px",
+                fontSize: "10.5px",
                 fontFamily: "Figtree",
                 fontWeight: 600,
                 wordSpacing: "0.1px",
