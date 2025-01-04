@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div className="flex items-center gap-x-2 transition-colors duration-75 text-primary-foreground">
       {/*Profile Image*/}
-      <div className="relative w-[100px] h-[100px] rounded-full flex itmes-center justify-center bg-gradient-to-r from-blue-joust to-green-benzol">
+      <div className="relative w-[100px] h-[100px] rounded-full flex itmes-center justify-center">
         <Image
           src={MyImage}
           alt="Jihee Kim photo"
