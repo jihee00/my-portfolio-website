@@ -22,7 +22,7 @@ const LiveClock: FC<LiveClockProps> = ({ timeZone}) => {
   }, [timeZone]);
 
   return (
-    <div className=" text-3xl text-secondary-foreground font-semibold">
+    <div className="text-lg md:text-xl lg:text-2xl text-secondary-foreground font-robotoMono">
       {time ? (
         <div className="flex items-center justify-center gap-[0.5vw]">
           <span>{timeZone.split("/")[1]}</span>,<span>{time}</span>

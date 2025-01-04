@@ -10,7 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["var(--font-roboto)"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        robotoMono: ["var(--font-roboto-mono)", "monospace"],
+        robotoSerif: ["var(--font-roboto-serif)", "serif"],
       },
       screens: { xs: "520px", "2xl": "1400px" },
       colors: {
@@ -34,15 +36,18 @@ const config: Config = {
           ice: "#d87cac",
         },
         border: "rgb(255 255 255 / 0.05)",
+        purple: "#9B59B6",
+        hotpink: "#FA2B88",
       },
       backgroundImage: {
         // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         // "gradient-conic":
         //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "grain":"url(/assets/images/background/noisy-background.png)",
+        //"grain":"url(/assets/images/background/noisy-background.png)",
       },
       animation: {
         "noisy-bg":"noise 1s steps(2) infinite",
+        wave: "wave 1.5s infinite",
       },
       keyframes: {
         noise: {
@@ -79,6 +84,14 @@ const config: Config = {
           to: {
             transform: "translate3d(-7rem, 0, 0)",
           },
+        },
+        wave: { 
+          '0%': { transform: 'rotate(0deg)' },
+          '20%': { transform: 'rotate(-10deg)' },
+          '40%': { transform: 'rotate(25deg)' }, 
+          '60%': { transform: 'rotate(-10deg)' },
+          '80%': { transform: 'rotate(25deg)' }, 
+          '100%': { transform: 'rotate(0deg)' },
         },
       }
     },

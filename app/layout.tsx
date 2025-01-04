@@ -9,7 +9,15 @@ import Cursor from "@/components/cursor/cursor";
 const MainFont = Inter({ subsets: ["latin"] });
 const RobotoFont = Roboto({
   subsets: ["latin"], variable: "--font-roboto",
-  weight: "100"
+  weight: ["100", "400", "700"],
+});
+const Roboto_MonoFont = Roboto_Mono({
+  subsets: ["latin"], variable: "--font-roboto-mono",
+  weight: ["100", "400", "700"],
+});
+const Roboto_SerifFont = Roboto_Serif({
+  subsets: ["latin"], variable: "--font-roboto-serif",
+  weight: ["100", "400", "700"],
 });
 
 //Metadata
@@ -25,7 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(MainFont.className, RobotoFont.variable )}>
+      <body className={cn(MainFont.className, RobotoFont.variable ,Roboto_MonoFont.variable,
+          Roboto_SerifFont.variable )}>
         <GrainEffect />
         <Cursor color="#fff" />
         {children}

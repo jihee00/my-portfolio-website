@@ -26,29 +26,20 @@ export default function LandingSection() {
       </div>
       {/*Slogan*/}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-      mt-8 leading-[14vw] lg:leading-[10vw] 2xl:leading-[9rem] font-medium h-[40rem] tracking-[-0.3rem]">
-        <div className="flex flex-col justify-center items-center text-primary-foreground text-[18vw] lg:text-[14vw] 2xl:text-[12rem] uppercase">
+      mt-8 leading-[4.67vw] lg:leading-[3.33vw] 2xl:leading-[3rem] font-medium h-[13.33rem] tracking-[-0.1rem]">
+        <div className="flex flex-col justify-center items-center text-primary-foreground text-[6vw] lg:text-[4.67vw] 2xl:text-[4rem] space-y-4">
           <div>
-            <span>Code</span>
+            <span>Hello, universe <span className="inline-block animate-wave">👋</span> </span>
           </div>
           <div>
-            <span>Crafting</span>
+            <span>I'm <span className='text-hotpink'>Jihee Kim</span>.</span>
           </div>
-          <div className="relative">
-            <span>Brilliance</span>
-            <div className="text-[1rem] leading-[1.4rem] tracking-[-0.07rem] absolute top-[14vw] lg:top-[10vw] 2xl:top-[9rem] left-0 2xl:left-[57rem] w-[30rem] uppercase font-normal">
-              <span>Empowering innovation</span>
-              <br />
-              <span>through inspired design</span>
-              <br />
-              <span>where challenges spark creativity</span>
-              <br />
-              <span>and solutions redefine possibilities.</span>
-            </div>
+          <div>
+            <span><span className='text-purple'>Full stack</span> developer.</span>
           </div>
         </div>
         {/*Magnetic Scroll Down*/}
-        <MagneticWrapper className="absolute -bottom-[8rem] md:bottom-[4rem] left-1/2 -translate-x-1/2 2xl:-bottom-10">
+        <MagneticWrapper className="mt-8">
           <ScrollDown />
         </MagneticWrapper>
       </div>

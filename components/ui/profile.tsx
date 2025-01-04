@@ -11,11 +11,9 @@ export default function Profile() {
           alt="Jihee Kim photo"
           className="w-[95px] h-[95px] border-[0.2vw] border-blue-cosmos rounded-full object-cover"
         />
-        {/*Online*/}
-        <div className="w-3 h-3 rounded-full bg-green-benzol border border-blue-cosmos absolute right-0 bottom-5"></div>
       </div>
       {/*Name*/}
-      <div className="text-3xl font-medium">Jihee Kim</div>
+      <div className="text-3xl font-medium"></div>
     </div>
   )
 }
