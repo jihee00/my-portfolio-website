@@ -8,7 +8,7 @@ import ScrollDown from '@/components/ui/scroll-down'
 
 export default function LandingSection() {
   return (
-    <div className="relative h-screen overflow-hidden p-8">
+    <div id="home" className="relative h-screen overflow-hidden p-8">
       {/* Header */}
       <Header />
       {/*Show magnetic fancy button on small screens and hide it on md screens */}

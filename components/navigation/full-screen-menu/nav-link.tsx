@@ -10,6 +10,7 @@ interface NavLinkProps {
     href: string;
     index: number;
   };
+  onClick: () => void;
 }
 
 const NavLink: FC<NavLinkProps> = ({ data }) => {

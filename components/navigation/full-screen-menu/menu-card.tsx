@@ -37,31 +37,23 @@ const myLinks = [
     link: "#about",
   },
   {
-    title: "Background",
-    link: "#about",
+    title: "Resume",
+    link: "#resume",
   },
   {
-    title: "Courses",
-    link: "#about",
-  },
-  {
-    title: "EXPERIENCE",
-    link: "#about",
+    title: "TECH-STACK",
+    link: "#tech-stack",
   },
   {
     title: "EDUCATION",
-    link: "#about",
+    link: "#education",
   },
   {
-    title: "CERTIFICATIONS",
-    link: "#about",
-  },
-  {
-    title: "TECH STACK",
-    link: "#about",
+    title: "EXPERIENCE",
+    link: "#experience",
   },
   {
     title: "Gallery",
-    link: "#about",
+    link: "#gallery",
   },
 ];

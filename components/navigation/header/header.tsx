@@ -36,12 +36,6 @@ export default function Header() {
           />
         </MagneticWrapper>
       </div>
-      {/*Toggle button*/}
-      {showToggle && <ToggleButton open={open} setOpen={setOpen}/>}
-      {/*Full screen menu*/}
-      <AnimatePresence mode="wait">
-        {open && <FullScreenMenu />}
-      </AnimatePresence>
     </div>
   );
 }
