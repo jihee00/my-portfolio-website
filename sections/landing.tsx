@@ -29,7 +29,7 @@ export default function LandingSection() {
       mt-8 leading-[4.67vw] lg:leading-[3.33vw] 2xl:leading-[3rem] font-medium h-[13.33rem] tracking-[-0.1rem]">
         <div className="flex flex-col justify-center items-center text-primary-foreground text-[6vw] lg:text-[4.67vw] 2xl:text-[4rem] space-y-4">
           <div>
-            <span>Hello, universe <span className="inline-block animate-wave">👋</span> </span>
+            <span>Hello, universe <span className="inline-block animate-wave">👋🏻</span> </span>
           </div>
           <div>
             <span>I'm <span className='text-hotpink'>Jihee Kim</span>.</span>

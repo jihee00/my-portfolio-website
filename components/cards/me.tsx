@@ -15,7 +15,7 @@ export default function MeCard() {
           className='absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover'/>
         {/*Tags*/}
         <div className="absolute top-[65%] space-y-2">
-          <Tag text="Hello, universe 👋" 
+          <Tag text="Hello, universe 👋🏻" 
           className='rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl'/>
           <Tag text="I'm Jihee Kim" 
           className='rounded-tr-2xl rounded-br-2xl rounded-bl-2xl'/>
