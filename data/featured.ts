@@ -1,6 +1,6 @@
 const featuredData = [
   {
-      title: "Web Programming Using Next.js",
+      title: "Web Development",
       logo: "Enrollment App",
       tag: "Aug 2024",
       video: "https://youtu.be/uaE7z965lqU", 
@@ -8,7 +8,7 @@ const featuredData = [
       link: "https://github.com/jihee00/enrollment-app",
   },
   {
-      title: "Web Programming Using ASP.NET",
+      title: "Web Development",
       logo: "Show Biz App",
       tag: "Apr 2024",
       video: "https://youtu.be/wI0Z4sbYbK4",
