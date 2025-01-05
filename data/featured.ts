@@ -1,38 +1,44 @@
-import { video } from "framer-motion/client";
-
 const featuredData = [
-    {
-        title: "Featured",
-        logo: "",
-        tag: "Feb 2024",
-        video: "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
-        credits: "Julia Dmitrievna",
-        link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
-    },
-    {
-      title: "Featured",
+  {
+      title: "Web Programming Using Next.js",
+      logo: "Enrollment App",
+      tag: "Aug 2024",
+      video: "https://youtu.be/uaE7z965lqU", 
+      credits: "",
+      link: "https://github.com/jihee00/enrollment-app",
+  },
+  {
+      title: "Web Programming Using ASP.NET",
+      logo: "Show Biz App",
+      tag: "Apr 2024",
+      video: "https://youtu.be/wI0Z4sbYbK4",
+      credits: "",
+      link: "https://github.com/jihee00/Show-Biz2",
+  },
+  {
+    title: "iOS App Development",
+    logo: "",
+    tag: "Feb 2024",
+    video: "https://youtu.be/vahhNaPcP_g", 
+    credits: "",
+    link: "https://youtu.be/vahhNaPcP_g",
+  },
+  {
+      title: "iOS App Development",
       logo: "",
-      tag: "Feb 2024",
-      video: "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
-      credits: "Julia Dmitrievna",
-      link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
-    },
-    {
-      title: "Featured",
+      tag: "Mar 2024",
+      video: "https://youtu.be/CRQBPcrB6Uw", 
+      credits: "",
+      link: "https://youtu.be/CRQBPcrB6Uw",
+  },
+  {
+      title: "Android App Development",
       logo: "",
-      tag: "Feb 2024",
-      video: "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
-      credits: "Julia Dmitrievna",
-      link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
-    },
-    {
-      title: "Featured",
-      logo: "",
-      tag: "Feb 2024",
-      video: "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
-      credits: "Julia Dmitrievna",
-      link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
-    },
+      tag: "Jul 2024",
+      video: "https://youtu.be/3WCVrLUbY_4",
+      credits: "",
+      link: "https://youtu.be/3WCVrLUbY_4",
+  },
 ];
 
 export default featuredData;
