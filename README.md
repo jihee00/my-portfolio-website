@@ -1,5 +1,5 @@
 ## Jihee.net
-Portfolio Page form Jihee Kim
+Portfolio Page for Jihee Kim
 ## Key Technologies
 React.js
 Next.js 14
