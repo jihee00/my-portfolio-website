@@ -1,9 +1,9 @@
 ## [Jihee.net](https://jihee.net)
 Portfolio Page for Jihee Kim
 ## Key Technologies
-React.js
-Next.js 14
-Tailwind CSS
+React.js <br/>
+Next.js 14 <br/>
+Tailwind CSS <br/>
 
 ## Screenshot of the Home Page
 ![스크린샷 2025-01-13 155332](https://github.com/user-attachments/assets/e1a1f105-a62a-4cf8-99b2-c8200ae3beec)
