@@ -88,6 +88,12 @@ export const stackData = [
         image: AngularImg,
         bgColor: "#FFFFFF",
       },
+      {
+        id: 5,
+        title: "Wix",
+        image: WixImg,
+        bgColor: "#FF69B4", // 분홍색
+      },
     ],
   },
   {
@@ -191,12 +197,6 @@ export const stackData = [
         id: 6,
         title: "WordPress",
         image: WordpressImg,
-        bgColor: "#333333",
-      },
-      {
-        id: 7,
-        title: "Wix",
-        image: WixImg,
         bgColor: "#333333",
       },
     ],
