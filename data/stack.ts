@@ -92,7 +92,7 @@ export const stackData = [
         id: 5,
         title: "Wix",
         image: WixImg,
-        bgColor: "#FF69B4", // 분홍색
+        bgColor: "#FF69B4", 
       },
     ],
   },
