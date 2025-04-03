@@ -21,6 +21,9 @@ import MysqlImg from "@/public/assets/images/stack/mysql.png";
 import OracleImg from "@/public/assets/images/stack/oracle.png";
 import PhotoshopImg from "@/public/assets/images/stack/photoshop.png";
 import SwiftImg from "@/public/assets/images/stack/swift.png";
+import WordpressImg from "@/public/assets/images/stack/wordpress.png";
+import WixImg from "@/public/assets/images/stack/wix.png";
+
 
 export const stackData = [
   {
@@ -183,6 +186,18 @@ export const stackData = [
         title: "Photoshop",
         image: PhotoshopImg,
         bgColor: "#FFFFFF",
+      },
+      {
+        id: 6,
+        title: "WordPress",
+        image: WordpressImg,
+        bgColor: "#333333",
+      },
+      {
+        id: 7,
+        title: "Wix",
+        image: WixImg,
+        bgColor: "#333333",
       },
     ],
   },
