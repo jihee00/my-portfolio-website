@@ -32,14 +32,14 @@ const experienceData = [
   {
     date: "2010 - 2011",
     title: "Web Designer",
-    subTitle: "NSON Media Co.",
+    subTitle: "NSON Media Inc.",
     link: "",
     tag: "Republic of Korea",
   },
   {
     date: "2012 - 2017",
     title: "E-commerce Manager",
-    subTitle: "TAUAD Co.",
+    subTitle: "TAUAD Inc.",
     link: "",
     tag: "Republic of Korea",
   }
