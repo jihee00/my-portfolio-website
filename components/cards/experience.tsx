@@ -23,24 +23,24 @@ export default function ExperienceCard() {
 
 const experienceData = [
   {
-    date: "2007 - 2008",
+    date: "2008 - 2009",
     title: "Financial Advisor",
     subTitle: "Korea Federation of Community Credit Cooperatives",
-    link: "",
-    tag: "",
+    link: "http://www.uiwangkfcc.co.kr/",
+    tag: "Republic of Korea",
   },
   {
     date: "2010 - 2011",
     title: "Web Designer",
-    subTitle: "Sorte",
+    subTitle: "NSON Media Co.",
     link: "",
-    tag: "",
+    tag: "Republic of Korea",
   },
   {
     date: "2012 - 2017",
     title: "E-commerce Manager",
-    subTitle: "TAUAD",
+    subTitle: "TAUAD Co.",
     link: "",
-    tag: "",
+    tag: "Republic of Korea",
   }
 ];

@@ -25,7 +25,7 @@ const educationData = [
   {
     date: "2002 - 2006",
     title: "Chinese Language And Literature",
-    subTitle: "Ewha Womans University",
+    subTitle: "Ewha Womans' University",
     link: "https://www.ewha.ac.kr/ewhaen/index.do",
     tag: "Republic of Korea",
   },
