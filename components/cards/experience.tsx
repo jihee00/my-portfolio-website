@@ -27,7 +27,7 @@ const experienceData = [
     title: "Financial Advisor",
     subTitle: "Korea Federation of Community Credit Cooperatives",
     link: "",
-    tag: "Republic of Korea",
+    tag: "",
   },
   {
     date: "2010 - 2011",
