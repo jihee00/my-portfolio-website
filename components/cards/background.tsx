@@ -4,14 +4,12 @@ export default function BackgroundCard() {
     <Card className="md:h-full" title="My Background">
       <div>
         <p className="leading-[160%] font-normal text-white/[0.4] text-[16px]">
-          Built successful online business from ground up, collecting capital, &nbsp;
+          Established and grew online business from scratch, &nbsp;
         <span className="text-white underline">
-          setting up online presence and managing customer interactions.
+          developing online presence and overseeing customer relationship management.
         </span>
-          Performed digital retouching and image editing and utilized
-          software programming languages, including Adobe Photoshop. <br />
-          Created user friendly websites, ensuring users could easily
-          navigate menus and content.
+          Performed digital retouching and image editing using various web design tools, with HTML markup for web page creation. <br />
+          Created user friendly websites, ensuring users could easily navigate menus and content.
         </p>
       </div>
     </Card>

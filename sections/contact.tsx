@@ -11,11 +11,21 @@ import { FormEvent, useRef, useState } from "react";
 import SelectInput from "@/components/ui/select-input";
 import emailjs from "@emailjs/browser";
 
+function Toast({ message, onClose }: { message: string; onClose: () => void }) {
+  setTimeout(onClose, 3000);
+  return (
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50">
+      {message}
+    </div>
+  );
+}
+
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null!);
   const btnRef = useRef<HTMLButtonElement>(null);
   const [services, setServices] = useState<string[]>([]);
   const [budgets, setBudgets] = useState<string[]>([]);
+  const [showToast, setShowToast] = useState(false);
 
   const sendEmail=(e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -24,13 +34,20 @@ export default function ContactSection() {
       "template_7bd5igl",
       formRef.current,
       "u7DuB_IsqjjcRUNVS"
-    ).then((res) => {
-      console.log(res.text);
-      console.log("Email sent successfully");
-    }, (error) => {
-      console.log(error.text);
-    });
-  }
+    ) .then(
+      (res) => {
+        console.log(res.text);
+        console.log("Email sent successfully");
+        setShowToast(true); 
+        formRef.current.reset(); 
+        setServices([]);
+        setBudgets([]);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+};
 
   return (
     <div id="contact" className="pt-24 px-3 lg:px-8">
@@ -138,6 +155,12 @@ export default function ContactSection() {
           </form>
         </div>
       </Card>
+      {showToast && (
+        <Toast
+          message="✅ Your message was sent successfully!"
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </div>
   );
 }
