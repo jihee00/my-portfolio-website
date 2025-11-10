@@ -20,11 +20,11 @@ export default function TawkWidget() {
     s1.setAttribute("crossorigin", "*");
     document.body.appendChild(s1);
 
-    // (선택) 기본 런처 숨기고 싶으면 이 코드 추가
-    // window.Tawk_API = window.Tawk_API || {};
-    // window.Tawk_API.onLoad = function () {
-    //   window.Tawk_API.hideWidget();
-    // };
+
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_API.onLoad = function () {
+    window.Tawk_API.hideWidget();
+    };
   }, []);
 
   return null;
