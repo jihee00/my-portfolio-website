@@ -21,10 +21,14 @@ export default function TawkWidget() {
     document.body.appendChild(s1);
 
 
+    (window as any).Tawk_API = (window as any).Tawk_API || {};
     const prevOnLoad = window.Tawk_API.onLoad;
     window.Tawk_API.onLoad = function () {
-      prevOnLoad?.();
-      try { window.Tawk_API.showWidget?.(); } catch {}
+      try {
+        prevOnLoad?.();
+        window.Tawk_API.showWidget?.();   // 런처 보이기
+        window.Tawk_API.minimize?.();     // 전체화면(최대화) 방지
+      } catch (e) {}
     };
   }, []);
 
