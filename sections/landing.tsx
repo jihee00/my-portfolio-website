@@ -16,7 +16,7 @@ export default function LandingSection() {
       {/* Header */}
       <Header />
       {/*Show magnetic fancy button on small screens and hide it on md screens */}
-      <div className="absolute bottom-36 left-10 z-20 md:hidden">
+      {/*<div className="absolute bottom-36 left-10 z-20 md:hidden">
         <MagneticWrapper>
           <FancyButton 
           text="Let's Talk"
@@ -25,6 +25,7 @@ export default function LandingSection() {
           />
         </MagneticWrapper>
       </div>
+      */}
       {/*Live Clock*/}
       <div className="absolute right-10 bottom-10">
         <LiveClock timeZone="America/Toronto" />

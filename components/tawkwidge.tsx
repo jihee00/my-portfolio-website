@@ -24,7 +24,7 @@ export default function TawkWidget() {
     const prevOnLoad = window.Tawk_API.onLoad;
     window.Tawk_API.onLoad = function () {
       prevOnLoad?.();
-      try { window.Tawk_API.hideWidget(); } catch {}
+      try { window.Tawk_API.showWidget?.(); } catch {}
     };
   }, []);
 
