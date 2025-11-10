@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Header from '@/components/navigation/header/header'
 import MagneticWrapper from '@/components/visualEffects/magnetic-wrapper'
@@ -7,6 +9,13 @@ import LiveClock from '@/components/ui/live-clock'
 import ScrollDown from '@/components/ui/scroll-down'
 
 export default function LandingSection() {
+
+  const openTawkChat = () => {
+    if (typeof window !== "undefined" && window.Tawk_API) {
+      window.Tawk_API.maximize(); // 채팅창 열기
+    }
+  };
+
   return (
     <div id="home" className="relative h-screen overflow-hidden p-8">
       {/* Header */}
@@ -17,6 +26,7 @@ export default function LandingSection() {
           <FancyButton 
           text="Let's Talk"
           icon={<FaArrowRight />}
+          onClick={openTawkChat}
           />
         </MagneticWrapper>
       </div>
