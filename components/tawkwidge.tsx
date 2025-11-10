@@ -21,9 +21,10 @@ export default function TawkWidget() {
     document.body.appendChild(s1);
 
 
-    window.Tawk_API = window.Tawk_API || {};
+    const prevOnLoad = window.Tawk_API.onLoad;
     window.Tawk_API.onLoad = function () {
-    window.Tawk_API.hideWidget();
+      prevOnLoad?.();
+      try { window.Tawk_API.hideWidget(); } catch {}
     };
   }, []);
 

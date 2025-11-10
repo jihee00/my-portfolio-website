@@ -7,14 +7,9 @@ import FancyButton from '@/components/ui/fancy-button'
 import { FaArrowRight } from 'react-icons/fa'
 import LiveClock from '@/components/ui/live-clock'
 import ScrollDown from '@/components/ui/scroll-down'
+import { openTawkChat } from "@/lib/tawk";
 
 export default function LandingSection() {
-
-  const openTawkChat = () => {
-    if (typeof window !== "undefined" && window.Tawk_API) {
-      window.Tawk_API.maximize(); // 채팅창 열기
-    }
-  };
 
   return (
     <div id="home" className="relative h-screen overflow-hidden p-8">
