@@ -10,11 +10,16 @@ import Button from "@/components/ui/button";
 import { FormEvent, useRef, useState } from "react";
 import SelectInput from "@/components/ui/select-input";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 
 function Toast({ message, onClose }: { message: string; onClose: () => void }) {
-  setTimeout(onClose, 3000);
+  useEffect(() => {
+    const timer = setTimeout(onClose, 3000);
+    return () => clearTimeout(timer);
+  }, [onClose]);
+
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 transform bg-green-600 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50">
       {message}
     </div>
   );
@@ -30,10 +35,10 @@ export default function ContactSection() {
   const sendEmail=(e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     emailjs.sendForm(
-      "service_4gin6az",
+      "service_khkzipc",
       "template_7bd5igl",
       formRef.current,
-      "u7DuB_IsqjjcRUNVS"
+      "bqpPIIIcB4sJIyjbW"
     ) .then(
       (res) => {
         console.log(res.text);
@@ -67,6 +72,10 @@ export default function ContactSection() {
               icon={<MdEmail className="fill-[#333] text-lg" />}
               text="jiheecreates@gmail.com"
               btnText="Email me"
+              onClick={() => {
+              navigator.clipboard.writeText("jiheecreates@gmail.com");
+              setShowToast(true);
+              }}
             />
           </div>
           {/*Contact form*/}
